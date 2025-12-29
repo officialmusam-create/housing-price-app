@@ -8,10 +8,9 @@ Original file is located at
 """
 
 import streamlit as st
-import pickle
 import numpy as np
-
-model = pickle.load(open("house_price.pkl", "rb"))
+import joblib
+model = joblib.load("house_model.pkl")
 
 st.title("🏠 House Price Prediction App")
 
